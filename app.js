@@ -33,6 +33,8 @@ app.use(cors());
 app.use(xss());
 
 
+// public
+app.use(express.static("public"))
 
 // routers
  const authRouter = require("./routes/auth.js");
